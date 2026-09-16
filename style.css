@@ -45,9 +45,12 @@ body {
 
 /* Title & nav */
 .site-title {
-  font-size: 3rem; /* larger */
-  margin-bottom: 12px;
+  font-size: 4.5rem;                 /* bigger hero size */
+  text-align: center;                /* centred */
+  margin-top: 20px;                  /* spacing above */
+  margin-bottom: 30px;               /* spacing below */
   font-family: "Playfair Display", serif; /* premium serif */
+  letter-spacing: 0.03em;            /* subtle premium spacing */
 }
 
 .main-nav {
