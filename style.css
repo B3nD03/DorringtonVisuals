@@ -1,67 +1,110 @@
-body {
+/* Base */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f2eee8; /* warm beige */
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3e9dd;
   color: #222;
+  line-height: 1.6;
 }
 
-/* HEADER */
-header {
-  padding: 50px 70px;
+/* Top bar */
+.top-bar {
+  padding: 12px 24px;
 }
 
-.socials {
+.social-links {
   display: flex;
-  gap: 18px;
-  margin-bottom: 25px;
+  gap: 20px;
 }
 
-.socials img {
-  width: 22px;
-  height: 22px;
-  opacity: 0.85;
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links i {
+  font-size: 26px;
+  color: #333;
   transition: 0.2s;
 }
 
-.socials img:hover {
-  opacity: 1;
+.social-links i:hover {
+  color: #000;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: 600;
-  margin: 0 0 20px 0;
-  letter-spacing: 0.5px;
+/* Layout */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
 }
 
-nav {
+/* Title & nav */
+.site-title {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.main-nav {
   display: flex;
-  gap: 45px;
-  margin-top: 10px;
+  gap: 24px;
+  margin-bottom: 32px;
+  font-size: 0.95rem;
 }
 
-nav a {
+.main-nav a {
   text-decoration: none;
+  letter-spacing: 0.08em;
   color: #333;
-  font-weight: 400;
-  letter-spacing: 1px;
 }
 
-.recent {
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+/* Recent project */
+.recent-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.recent-image {
+  border: 1px solid #ccc;
+  background: #fdf7ef;
+  height: 160px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 80px 70px;
+  align-items: center;
+  justify-content: center;
+  color: #777;
 }
 
-.recent h2 {
-  font-size: 34px;
-  font-weight: 600;
-  margin-top: 0;
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.85rem;
+  color: #666;
 }
 
-.image-container img {
-  width: 520px;
-  border-radius: 6px;
+/* Responsive */
+@media (max-width: 700px) {
+  .recent-layout {
+    grid-template-columns: 1fr;
+  }
 }
-
