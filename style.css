@@ -1,23 +1,24 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f2eee8; /* soft beige */
+  background: #f2eee8; /* warm beige */
   color: #222;
 }
 
+/* HEADER */
 header {
-  padding: 40px;
-  text-align: left;
+  padding: 50px 70px;
 }
 
 .socials {
   display: flex;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 18px;
+  margin-bottom: 25px;
 }
 
 .socials img {
   width: 22px;
+  height: 22px;
   opacity: 0.85;
   transition: 0.2s;
 }
@@ -26,16 +27,16 @@ header {
   opacity: 1;
 }
 
-
 h1 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 600;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
 }
 
 nav {
   display: flex;
-  gap: 30px;
+  gap: 45px;
   margin-top: 10px;
 }
 
@@ -46,19 +47,22 @@ nav a {
   letter-spacing: 1px;
 }
 
+/* RECENT PROJECT SECTION */
 .recent {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 60px 40px;
+  padding: 80px 70px;
 }
 
 .recent h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 600;
+  margin-top: 0;
 }
 
 .image-container img {
-  width: 420px;
+  width: 520px;
   border-radius: 6px;
 }
+
